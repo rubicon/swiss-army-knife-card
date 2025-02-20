@@ -1,0 +1,1 @@
+import{DEFAULT_DOMAIN_ICON_NAME}from"../const_name";import{computeDomain}from"./compute_domain";import{domainIconName}from"./domain_icon_name";let stateIconName=o=>o?domainIconName(computeDomain(o.entity_id),o):DEFAULT_DOMAIN_ICON_NAME;export{stateIconName};

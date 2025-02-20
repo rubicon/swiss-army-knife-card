@@ -1,0 +1,1 @@
+let fireEvent=(e,l,b,o)=>{o=o||{},b=null==b?{}:b;l=new Event(l,{bubbles:void 0===o.bubbles||o.bubbles,cancelable:Boolean(o.cancelable),composed:void 0===o.composed||o.composed});return l.detail=b,e.dispatchEvent(l),l};export{fireEvent};

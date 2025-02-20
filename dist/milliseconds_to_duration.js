@@ -1,0 +1,1 @@
+let leftPad=(t,e=2)=>{let l=""+t;for(let t=1;t<e;t++)l=parseInt(l)<10**t?"0"+l:l;return l};export default function millisecondsToDuration(t){var e=Math.floor(t/1e3/3600),l=Math.floor(t/1e3%3600/60),o=Math.floor(t/1e3%3600%60),t=Math.floor(t%1e3);return 0<e?`${e}:${leftPad(l)}:`+leftPad(o):0<l?l+":"+leftPad(o):0<o||0<t?""+o+(0<t?"."+leftPad(t,3):""):null}

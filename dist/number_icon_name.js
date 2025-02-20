@@ -1,0 +1,1 @@
+import{FIXED_DEVICE_CLASS_ICONS_NAME}from"../const_name";let numberIconName=_=>{_=_?.attributes.device_class;if(_&&_ in FIXED_DEVICE_CLASS_ICONS_NAME)return FIXED_DEVICE_CLASS_ICONS_NAME[_]};export{numberIconName};

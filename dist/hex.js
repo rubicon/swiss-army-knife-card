@@ -1,0 +1,1 @@
+let expandHex=e=>{if(6===(e=e.replace("#","")).length)return e;let r="";for(var t of e)r+=t+t;return r},hexBlend=(t,n,l=50)=>{let x="";t=expandHex(t),n=expandHex(n);for(let r=0;r<=5;r+=2){var a=parseInt(t.substr(r,2),16),o=parseInt(n.substr(r,2),16);let e=Math.floor(o+l/100*(a-o)).toString(16);for(;e.length<2;)e="0"+e;x+=e}return"#"+x};export{expandHex,hexBlend};

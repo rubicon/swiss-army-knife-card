@@ -1,0 +1,1 @@
+let supportsFeature=(t,r)=>supportsFeatureFromAttributes(t.attributes,r),supportsFeatureFromAttributes=(t,r)=>0!=(t.supported_features&r);export{supportsFeature,supportsFeatureFromAttributes};

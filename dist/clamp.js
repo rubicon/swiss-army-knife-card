@@ -1,0 +1,1 @@
+let clamp=(a,t,m)=>Math.min(Math.max(a,t),m),conditionalClamp=(a,t,m)=>{t=t?Math.max(a,t):a;return m?Math.min(t,m):t};export{clamp,conditionalClamp};

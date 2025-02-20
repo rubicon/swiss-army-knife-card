@@ -1,0 +1,1 @@
+let computeDomain=e=>e.substr(0,e.indexOf("."));export{computeDomain};
